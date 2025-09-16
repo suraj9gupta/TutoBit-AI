@@ -166,9 +166,8 @@ class CareerCraftAPITester:
         success, response = self.run_test(
             "Skill Gap Analysis",
             "POST",
-            f"skill-gap-analysis/{self.test_user_id}",
-            200,
-            params={"target_role": "Data Scientist"}
+            f"skill-gap-analysis/{self.test_user_id}?target_role=Data%20Scientist",
+            200
         )
         
         if success:
