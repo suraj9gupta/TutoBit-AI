@@ -52,11 +52,11 @@ def debug_python_environment():
     # Check if package is installed
     print("📋 Checking package installation...")
     try:
-        import pkg_resources
-        pkg = pkg_resources.get_distribution("emergentintegrations")
-        print(f"✅ Package installed: {pkg.project_name} version {pkg.version}")
-        print(f"✅ Package location: {pkg.location}")
-    except pkg_resources.DistributionNotFound:
+        import importlib.metadata
+        pkg = importlib.metadata.distribution("emergentintegrations")
+        print(f"✅ Package installed: {pkg.metadata['Name']} version {pkg.version}")
+        print(f"✅ Package files: {len(list(pkg.files))} files found")
+    except importlib.metadata.PackageNotFoundError:
         print("❌ emergentintegrations package not found!")
         return False
     except Exception as e:
