@@ -97,7 +97,7 @@ const Home = () => {
             <Sparkles className="h-5 w-5 text-white" />
           </div>
           <span className="text-xl font-bold bg-gradient-to-r from-emerald-600 to-cyan-600 bg-clip-text text-transparent">
-            CareerCraft AI
+            TutoBit AI
           </span>
         </div>
         <Button 
