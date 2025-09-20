@@ -216,7 +216,7 @@ const Home = () => {
             Ready to Transform Your Career?
           </h2>
           <p className="text-xl mb-8 text-emerald-100">
-            Join thousands of professionals who've found their dream careers with CareerCraft AI
+            Join thousands of professionals who've found their dream careers with TutoBit AI
           </p>
           <Button 
             size="lg"
