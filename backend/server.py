@@ -30,7 +30,7 @@ api_router = APIRouter(prefix="/api")
 # LLM Chat instance
 llm_chat = LlmChat(
     api_key=os.environ.get('EMERGENT_LLM_KEY'),
-        session_id="careercraft-main",
+        session_id="tutobit-main",
             system_message="""You are TutoBit AI, an expert career guidance counselor and mentor. You provide personalized career advice, skill gap analysis, and learning recommendations. Always be encouraging, professional, and provide actionable insights. Focus on practical advice that helps users advance their careers."""
             ).with_model("openai", "gpt-4o")
 
