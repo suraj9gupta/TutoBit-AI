@@ -291,7 +291,7 @@ const Onboarding = () => {
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-cyan-50 px-6 py-8">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">Welcome to CareerCraft AI</h1>
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">Welcome to TutoBit AI</h1>
           <p className="text-gray-600">Let's build your career profile</p>
           <div className="flex justify-center mt-4">
             <Progress value={(step / 3) * 100} className="w-64" />
